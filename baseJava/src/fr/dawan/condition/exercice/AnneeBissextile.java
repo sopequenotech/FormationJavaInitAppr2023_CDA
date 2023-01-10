@@ -1,34 +1,38 @@
 package fr.dawan.condition.exercice;
 
+import java.util.Scanner;
+
 public class AnneeBissextile {
 
 	public static void main(String[] args) {
 
-		//Les données sont fournies par l'utilisateur
-		
-		
+		Scanner clavier = new Scanner(System.in);
+		int annee;
+
+		//Les données  fournies par l'utilisateur
+		System.out.print("Veuillez saisir une année : ");
+		annee = clavier.nextInt();
+
 		/*
 		 * Une année bissextile : 
 		 * 	SI l'année est divisible par 4 ET non divisible par 100 : C1 
 		 *  OU SI l'année est divisible par 400 : C2
 		 */
-		
-		int nombre = 4;
-		
-		//division euclidienne : b = a*q + r
-		
-		//4 = 2*2 + 0 
-		//r=0  (reste)
-		//donc 4 est pair 
-		// 4 est divisible par 2 
-		
-		//5 = 2*2 + 1
-		//r = 1
-		//donc 5 impair
-	
+
+		if((annee % 4 == 0 && annee % 100 != 0) || (annee % 400 == 0)) {
+			System.out.println(annee + " est une année bissextile");
+		}else {
+			System.out.println(annee + " n'est pas une année bissextile");
+		}
 		
 		
-		
+		//Exemple avec opérateur ternaire
+//		String str = ((annee % 4 == 0 && annee % 100 != 0)  || (annee % 400 == 0)) 
+//						? "L'année "+ annee +" est une année bissextile" 
+//						: "L'année "+ annee +" n'est pas une année bissextile";
+//		
+//        System.out.println(str);
+
 	}
 
 }
