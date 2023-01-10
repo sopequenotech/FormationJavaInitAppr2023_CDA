@@ -1,0 +1,39 @@
+OPERATEURS LOGIQUE : 
+
+ET ==> (&&) 
+OU ==> (||) 
+NON ==> (!)
+
+
+ET (&&): 
+A  B   =  S 
+0  0   =  0
+0  1   =  0
+1  0   =  0
+1  1   =  1
+
+EXEMPLE CODE : 
+	A = (5 < 7) 
+	B = ( 10 > 3)
+	if((5 < 7) && (10 > 3)) {....} 
+	else {...}
+
+
+OU (||): 
+A  B   =  S 
+0  0   =  0
+0  1   =  1
+1  0   =  1
+1  1   =  1
+
+
+
+NON (!) 
+A   =  S 
+0   =  1
+1   =  0
+0   =  1
+1   =  0
+
+EX : !VRAIE = FAUX
+if(!(nbre >= 0)) {System.out.println("Le nombre est negatif");}
