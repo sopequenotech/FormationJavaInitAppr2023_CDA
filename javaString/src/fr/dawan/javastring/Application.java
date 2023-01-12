@@ -47,6 +47,10 @@ public class Application {
 		char x1 = 5 + 'A';  //70 ==> 'F'
 		System.out.println(x1);
 		
+		int f = 'è';
+		
+		System.out.println(f);
+		
 
 
 	}
